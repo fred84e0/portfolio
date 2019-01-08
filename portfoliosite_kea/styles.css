@@ -1,0 +1,518 @@
+body {
+    margin: 0;
+    background-color: rgba(181, 181, 181, 0.23);
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'raleway', sans-serif;
+    color: rgba(95, 80, 68, 0.98);
+}
+
+p {
+    font-family: 'arial', sans-serif;
+    color: rgba(52, 52, 52, 0.81);
+}
+
+/****** Headeren ****/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.logo {
+    color: #f2e4d7;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-family: 'raleway';
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-between;
+    width: 25%
+}
+
+.nav_links a {
+    letter-spacing: 2px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.78);
+    width: 100%;
+    padding: 4vw;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #f2e4d7;
+    margin: 5px;
+}
+
+
+
+
+@media screen and (max-width:800px) {
+    body {
+        overflow-x: hidden;
+    }
+
+
+    .nav_links {
+        position: absolute;
+        right: 0px;
+        height: 37.6vh;
+        top: 12.4vh;
+        background-color: rgba(0, 0, 0, 0.78);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.2s ease-in;
+        z-index: 1;
+    }
+
+    .nav_links li {
+        padding: 30px 30px 30px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+}
+
+.nav_active {
+    transform: translateX(0%);
+}
+
+
+
+
+
+
+
+
+/* unvisited link */
+header nav a:link {
+    color: #f2e4d7;
+}
+
+/* visited link */
+header nav a:visited {
+    color: #f2e4d7;
+}
+
+/* mouse over link */
+header nav a:hover {
+    color: #E64E4B;
+}
+
+/* selected link */
+header nav a:active {
+    color: #f2e4d7;
+}
+
+
+/****************************** INDEX ********************************/
+
+.beskrivelse_hp h1,
+.beskrivelse_hp h3 {
+    color: rgba(0, 0, 0, 0.72);
+
+}
+
+.splash_container {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12vw;
+}
+
+.splashbillede {
+    opacity: 0.4;
+}
+
+
+#intro_homepage {
+
+    margin: 5vw;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.beskrivelse_hp h1 {
+    padding: 0 0 0 1rem;
+}
+
+.beskrivelse_hp h3 {
+    margin: -1rem 0 0 1rem;
+    padding: 0 0 1rem 0;
+}
+
+.visning_hp p {
+    padding: 0 1rem 0 1rem;
+
+}
+
+.visning_hp {
+    background-color: rgba(137, 137, 137, 1);
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: 1vw;
+    border-radius: 10px;
+}
+
+.beskrivelse_hp {
+    background-color: rgba(137, 137, 137, 1);
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: 1vw;
+    border-radius: 10px;
+}
+
+
+
+
+/******************************** PORTFOLIO **************************/
+
+
+/** intro Portfolio **/
+
+#intro h1 {
+    padding: 1rem 0 0 1rem;
+}
+
+#intro h3 {
+    margin: -1rem 0 0 1rem;
+    padding: 0 0 1rem 0;
+}
+
+/** intro Portfolio slut **/
+
+
+/** PORTFOLIO CONTENT **/
+
+#tema1 {
+    background-color: rgba(137, 137, 137, 1);
+    margin: 5vw;
+    border-radius: 10px;
+
+}
+
+#tema2 {
+    background-color: rgba(137, 137, 137, 1);
+    margin: 5vw;
+    border-radius: 10px;
+}
+
+#tema3 {
+    background-color: rgba(137, 137, 137, 1);
+    margin: 5vw;
+    border-radius: 10px;
+}
+
+#tema4 {
+    background-color: rgba(137, 137, 137, 1);
+    margin: 5vw;
+    border-radius: 10px;
+}
+
+
+#intro {
+    background-color: rgba(201, 201, 201, 0.87);
+    margin: 5vw;
+    border-radius: 10px;
+}
+
+.container {
+
+    background-color: rgba(201, 201, 201, 0.87);
+    flex-wrap: wrap;
+    display: flex;
+    border-radius: 10px;
+    transition: .4s ease;
+}
+
+#portfolio .container {
+    border-radius: 0 0 10px 10px;
+}
+
+.beskrivelse {
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: 5vw;
+}
+
+.visning {
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: 5vw;
+}
+
+.hide {
+    visibility: hidden;
+    display: none;
+}
+
+
+/** links til afleveringer **/
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'raleway', sans-serif;
+}
+
+/* unvisited link */
+#portfolio a:link {
+    color: #f2e4d7;
+    background-color: #777;
+    padding: 14px 25px;
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+
+}
+
+/* visited link */
+#portfolio a:visited {
+    color: #f2e4d7;
+}
+
+/* mouse over link */
+#portfolio a:hover {
+    color: #f2e4d7;
+    transform: scale(1.03);
+    filter: brightness(110%);
+}
+
+/************************** CV ********************************/
+
+#om_cv {
+    margin: 5vw;
+}
+
+#om_cv li {
+    font-family: 'arial', sans-serif;
+    color: rgba(52, 52, 52, 0.81);
+}
+
+ul {
+
+    font-family: 'arial', sans-serif;
+    list-style-type: none;
+    margin: 0 0 0 -2.3rem;
+}
+
+.visning_txt {
+    margin: 5vw 0 0 0;
+    border-top: solid rgba(52, 52, 52, 0.81);
+    padding-top: 5vw;
+
+}
+
+#cv_cv .visning p {
+    margin-top: -19px;
+}
+
+#cv_cv .beskrivelse p {
+    margin-top: -19px;
+}
+
+#cv_cv {
+    margin: 5vw;
+}
+
+.portrait {
+    border-radius: 5px;
+    opacity: 0.7;
+
+}
+
+
+/*** COLLAPSIBLE *****/
+
+.collapse {
+    background-color: #777;
+    color: #f2e4d7;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+}
+
+.collapse:hover {
+    transform: scale(1.03);
+    filter: brightness(110%);
+}
+
+.content1,
+.content2,
+.content3,
+.content4 {
+    height: 0vh;
+    overflow: hidden;
+
+}
+
+.normal1 {
+    height: 145vh;
+}
+
+.normal2 {
+    height: 330vh;
+}
+
+.normal3 {
+    height: 440vh;
+}
+
+.normal4 {
+    height: 640vh;
+}
+
+
+
+
+/*************** FOOTER ****************/
+
+#tema4 {
+    margin-bottom: 160px;
+}
+
+
+footer {
+    margin-top: 85px;
+    background: rgba(0, 0, 0, 0.56);
+    width: 100%;
+    padding: 8vw;
+}
+
+
+.insta:hover {
+    transform: scale(1.07);
+
+}
+
+.facebook:hover {
+    transform: scale(1.07);
+
+}
+
+.footer_links {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+
+
+}
+
+.insta {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    right: 22vw;
+
+
+
+}
+
+.facebook {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    right: 12vw;
+}
+
+
+
+
+@media (min-width: 800px) {
+
+    footer {
+        padding: 3.2vw;
+        margin-top: 0;
+    }
+
+    header {
+        padding: 2vw;
+    }
+
+    .insta {
+        width: 3vw;
+        height: 3vw;
+        right: 10vw;
+
+    }
+
+
+    .facebook {
+
+        width: 3vw;
+        height: 3vw;
+        right: 6vw;
+    }
+
+    .foto1 {
+        max-width: 65%;
+
+    }
+
+    #portfolio img {
+        margin-top: 55px;
+    }
+
+    .normal1 {
+        height: 85vh;
+    }
+
+    .normal2 {
+        height: 180vh;
+    }
+
+    .normal3 {
+        height: 270vh;
+    }
+
+    .normal4 {
+        height: 480vh;
+    }
+
+    #tema4 {
+        margin-bottom: 100px;
+    }
+
+
+
+}
